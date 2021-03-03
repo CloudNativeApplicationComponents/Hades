@@ -3,7 +3,7 @@ using Grpc.Core;
 using Hades.Core.Abbstraction.Grpc.Server;
 using System;
 
-namespace Hades.Core.Grpc
+namespace Hades.Core.Grpc.Server
 {
     public abstract class GrpcServerMethodBase<TRequest, TResponse> : IGrpcServerMethod
         where TRequest : class, IMessage<TRequest>, new()

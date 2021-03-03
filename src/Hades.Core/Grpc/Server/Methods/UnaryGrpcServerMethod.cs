@@ -4,7 +4,7 @@ using Hades.Core.Abbstraction.Grpc.Server;
 using System;
 using System.Threading.Tasks;
 
-namespace Hades.Core.Grpc
+namespace Hades.Core.Grpc.Server
 {
     public class UnaryGrpcServerMethod<TRequest, TResponse> : GrpcServerMethodBase<TRequest, TResponse>, IUnaryGrpcServerMethod<TRequest, TResponse>
         where TRequest : class, IMessage<TRequest>, new()
