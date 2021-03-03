@@ -3,9 +3,9 @@ using Spear.Abstraction;
 using System;
 using System.Threading.Tasks;
 
-namespace Hades.Core.Grpc
+namespace Hades.Connector.Grpc.Internal.Server
 {
-    public class HadesGrpcServerAgent : IHadesAgent
+    internal class HadesGrpcServerAgent : IHadesAgent
     {
         private readonly ISpearClient _spearClient;
 
