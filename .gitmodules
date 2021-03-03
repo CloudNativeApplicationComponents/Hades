@@ -1,4 +1,4 @@
-
 [submodule "submodules/Spear"]
 	path = submodules/Spear
 	url = https://github.com/CloudNativeApplicationComponents/Spear.git
+	branch = main
