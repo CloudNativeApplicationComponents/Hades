@@ -35,6 +35,7 @@ namespace Hades.Connector.Grpc.Internal.Server
                 var context = new AggregationContext();
                 var info = (builder, service);
                 context.Add(info);
+
                 method.Accept(this, context);
             });
             return builder.Build();
