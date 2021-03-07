@@ -1,6 +1,6 @@
 ﻿using Google.Protobuf;
 using Grpc.Core;
-using Hades.Connector.Grpc.Server;
+using Hades.Connector.Grpc.Serialization;
 using System.Reflection;
 
 namespace Hades.Connector.Grpc.Internal
@@ -36,7 +36,7 @@ namespace Hades.Connector.Grpc.Internal
 
         static class MessageCache<T>
         {
-            public static readonly bool IsBufferMessage = 
+            public static readonly bool IsBufferMessage =
                 IntrospectionExtensions.GetTypeInfo(typeof(IBufferMessage)).IsAssignableFrom(typeof(T));
         }
     }

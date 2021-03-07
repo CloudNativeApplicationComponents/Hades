@@ -1,7 +1,7 @@
 ﻿using System.Collections.Generic;
 using System.Threading.Tasks;
 
-namespace Hades.Core.Abstraction.Connector.Server
+namespace Hades.Connector.Abstraction
 {
     public interface IHadesClientApi
     {

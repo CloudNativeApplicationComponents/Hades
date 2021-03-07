@@ -3,12 +3,12 @@ using CloudNativeApplicationComponents.Utils.Grpc;
 using Google.Protobuf;
 using Google.Protobuf.WellKnownTypes;
 using Grpc.Core;
-using Hades.Connector.Grpc.Server;
+using Hades.Connector.Grpc.Serialization;
 using Spear.Abstraction;
 using System;
 using System.Threading.Tasks;
 
-namespace Hades.Connector.Grpc.Internal.Server
+namespace Hades.Connector.Grpc.Internal
 {
     internal class ServerServiceDefinitionBuilder : ISpearServerMethodDefinitionVisitor
     {
@@ -93,8 +93,6 @@ namespace Hades.Connector.Grpc.Internal.Server
 
             builder.AddMethod(grpcMethod, ExecuteDuplexStreaming);
         }
-
-
 
         private async Task<Empty> ExecuteEvent(ProtobufMessage request, ServerCallContext context)
         {

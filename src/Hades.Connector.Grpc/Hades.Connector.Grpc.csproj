@@ -1,18 +1,19 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
 
-  <PropertyGroup>
-    <TargetFramework>netstandard2.1</TargetFramework>
-  </PropertyGroup>
+	<PropertyGroup>
+		<TargetFramework>netstandard2.1</TargetFramework>
+	</PropertyGroup>
 
-  <ItemGroup>
-  </ItemGroup>
+	<ItemGroup>
+		<PackageReference Include="Microsoft.Extensions.Options" Version="5.0.0" />
+		<PackageReference Include="Google.Protobuf" Version="3.15.3" />
+		<PackageReference Include="System.Memory" Version="4.5.4" />
+	</ItemGroup>
 
-  <ItemGroup>
-    <ProjectReference Include="..\..\submodules\Spear\submodules\Utils\src\CloudNativeApplicationComponents.Utils.Grpc\CloudNativeApplicationComponents.Utils.Grpc.csproj" />
-    <ProjectReference Include="..\..\submodules\Spear\submodules\Utils\src\CloudNativeApplicationComponents.Utils\CloudNativeApplicationComponents.Utils.csproj" />
-    <ProjectReference Include="..\Hades.Connector.Grpc.Abstraction\Hades.Connector.Grpc.Abstraction.csproj" />
-    <ProjectReference Include="..\Hades.Core\Hades.Core.csproj" />
-  </ItemGroup>
-
+	<ItemGroup>
+		<ProjectReference Include="..\..\submodules\Spear\submodules\Utils\src\CloudNativeApplicationComponents.Utils.Grpc\CloudNativeApplicationComponents.Utils.Grpc.csproj" />
+		<ProjectReference Include="..\..\submodules\Spear\submodules\Utils\src\CloudNativeApplicationComponents.Utils\CloudNativeApplicationComponents.Utils.csproj" />
+		<ProjectReference Include="..\Hades.Core\Hades.Core.csproj" />
+	</ItemGroup>
 
 </Project>
