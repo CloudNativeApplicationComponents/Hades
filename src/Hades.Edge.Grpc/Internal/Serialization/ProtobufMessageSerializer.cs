@@ -1,9 +1,9 @@
 ﻿using Google.Protobuf;
 using Grpc.Core;
-using Hades.Connector.Grpc.Serialization;
+using Hades.Edge.Grpc.Serialization;
 using System.Reflection;
 
-namespace Hades.Connector.Grpc.Internal
+namespace Hades.Edge.Grpc.Internal.Serialization
 {
     internal class ProtobufMessageSerializer : IProtobufMessageSerializer, IProtobufMessageDeserializer
     {

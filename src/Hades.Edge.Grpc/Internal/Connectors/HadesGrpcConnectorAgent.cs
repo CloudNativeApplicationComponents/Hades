@@ -1,29 +1,28 @@
 ﻿using CloudNativeApplicationComponents.Utils;
 using Grpc.Core;
-using Hades.Connector.Grpc.Internal.Options;
 using Hades.Core.Abstraction.Protocols;
+using Hades.Edge.Abstraction.Services;
 using Microsoft.Extensions.Options;
-using Spear.Abstraction;
 using System;
 using System.Linq;
 using System.Threading.Tasks;
 
 
-namespace Hades.Connector.Grpc.Internal
+namespace Hades.Edge.Grpc.Internal.Connectors
 {
     internal class HadesGrpcConnectorAgent : IHadesAgent
     {
-        private readonly ISpearClient _spearClient;
+        private readonly IDynamicServiceDiscovery _serviceDiscovery;
         private readonly ServerServiceDefinitionBuilder _serverServiceDefinitionBuilder;
         private readonly HadesGrpcConnectorOption _option;
         private readonly Server _server;
 
-        public HadesGrpcConnectorAgent(ISpearClient spearClient,
+        public HadesGrpcConnectorAgent(IDynamicServiceDiscovery serviceDiscovery,
             ServerServiceDefinitionBuilder serverServiceDefinitionBuilder,
             IOptions<HadesGrpcConnectorOption> option)
         {
-            _spearClient = spearClient
-                ?? throw new ArgumentNullException(nameof(spearClient));
+            _serviceDiscovery = serviceDiscovery
+                ?? throw new ArgumentNullException(nameof(serviceDiscovery));
 
             _serverServiceDefinitionBuilder = serverServiceDefinitionBuilder
                 ?? throw new ArgumentNullException(nameof(serverServiceDefinitionBuilder));
@@ -39,9 +38,11 @@ namespace Hades.Connector.Grpc.Internal
 
         public async Task Start()
         {
-            _spearClient.Discovery().DiscoverAllServices()
-                .Select(service => _serverServiceDefinitionBuilder.Build(service))
-                .Foreach(t => _server.Services.Add(t));
+            //TODO Grpc must be constant here!!
+            _serviceDiscovery.GetDynamicServices("Grpc")
+                .GroupBy(t => t.CatalogName)
+                .Select(_serverServiceDefinitionBuilder.Build)
+                .Foreach(_server.Services.Add);
 
             _server.Start();
             await Task.CompletedTask;

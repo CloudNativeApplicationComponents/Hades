@@ -1,7 +1,7 @@
 ﻿using Google.Protobuf;
 using Google.Protobuf.Reflection;
 
-namespace Hades.Connector.Grpc.Internal
+namespace Hades.Edge.Grpc.Internal.Messages
 {
     internal sealed class ProtobufMessage : IMessage<ProtobufMessage>
 #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE

@@ -1,7 +1,7 @@
 ﻿using Google.Protobuf;
 using Grpc.Core;
 
-namespace Hades.Connector.Grpc.Serialization
+namespace Hades.Edge.Grpc.Serialization
 {
     public interface IProtobufMessageDeserializer
     {

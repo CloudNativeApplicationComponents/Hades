@@ -1,11 +1,10 @@
 ﻿using Google.Protobuf.Reflection;
 
-namespace Hades.Connector.Grpc.Internal
+namespace Hades.Edge.Grpc.Internal.Messages
 {
     internal static class MessageReflection
     {
         #region Descriptor
-        /// <summary>File descriptor for protos/message.proto</summary>
         public static FileDescriptor Descriptor
         {
             get { return _descriptor; }

@@ -5,7 +5,7 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\Hades.Core\Hades.Core.csproj" />
+    <ProjectReference Include="..\..\submodules\Spear\submodules\Utils\src\CloudNativeApplicationComponents.Utils\CloudNativeApplicationComponents.Utils.csproj" />
   </ItemGroup>
-  
+
 </Project>

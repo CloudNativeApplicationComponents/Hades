@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 
-namespace Hades.Connector.Grpc.Internal.Options
+namespace Hades.Edge.Grpc.Internal.Connectors
 {
     //TODO this option must contain server credentioal configurations
     public class HadesGrpcConnectorOption
