@@ -15,6 +15,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Hades.Test.Common", "test\H
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{C8CDB1AA-ABFC-400D-A37A-4B5825A4C505}"
 	ProjectSection(SolutionItems) = preProject
+		Directory.Build.props = Directory.Build.props
+		Directory.Build.targets = Directory.Build.targets
 		README.md = README.md
 	EndProjectSection
 EndProject
@@ -44,7 +46,9 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Edge", "Edge", "{FA5AEEB2-4
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Hades.Edge.Grpc", "src\Hades.Edge.Grpc\Hades.Edge.Grpc.csproj", "{EAD80C2D-917B-4D27-9F7C-370B356B1FBB}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Hades.Edge.Spear.Integration", "src\Hades.Edge.Spear.Integration\Hades.Edge.Spear.Integration.csproj", "{D19E6CB6-865D-4FB4-90DE-A22826B6D3C6}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Hades.Edge.Spear.Integration", "src\Hades.Edge.Spear.Integration\Hades.Edge.Spear.Integration.csproj", "{D19E6CB6-865D-4FB4-90DE-A22826B6D3C6}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Hades.Core", "src\Hades.Core\Hades.Core.csproj", "{398BE667-B264-4529-82AF-18B0DB4D426F}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -92,6 +96,10 @@ Global
 		{D19E6CB6-865D-4FB4-90DE-A22826B6D3C6}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{D19E6CB6-865D-4FB4-90DE-A22826B6D3C6}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{D19E6CB6-865D-4FB4-90DE-A22826B6D3C6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{398BE667-B264-4529-82AF-18B0DB4D426F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{398BE667-B264-4529-82AF-18B0DB4D426F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{398BE667-B264-4529-82AF-18B0DB4D426F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{398BE667-B264-4529-82AF-18B0DB4D426F}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -113,6 +121,7 @@ Global
 		{FA5AEEB2-45D6-48CE-BCA9-657222101279} = {F52E431C-670D-4895-B5BE-541646DA3CE2}
 		{EAD80C2D-917B-4D27-9F7C-370B356B1FBB} = {FA5AEEB2-45D6-48CE-BCA9-657222101279}
 		{D19E6CB6-865D-4FB4-90DE-A22826B6D3C6} = {FA5AEEB2-45D6-48CE-BCA9-657222101279}
+		{398BE667-B264-4529-82AF-18B0DB4D426F} = {F52E431C-670D-4895-B5BE-541646DA3CE2}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {9C1B0B43-5978-45D5-B395-598033E79E9C}

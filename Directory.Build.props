@@ -1,0 +1,19 @@
+<Project>
+  <PropertyGroup>
+    <LangVersion>9.0</LangVersion>
+    <AssemblyName>$(MSBuildProjectName)</AssemblyName>
+    <RootNamespace>$(MSBuildProjectName)</RootNamespace>
+    <Version>0.0.0</Version>
+    <Nullable>enable</Nullable>
+    <NoWarn>CA2007</NoWarn>
+  </PropertyGroup>
+
+  <PropertyGroup>
+    <BuildToysWithPackage>false</BuildToysWithPackage>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(__CI_PACKAGE_VERSION)' != ''">
+    <Version>$(__CI_PACKAGE_VERSION)</Version>
+  </PropertyGroup>
+
+</Project>
