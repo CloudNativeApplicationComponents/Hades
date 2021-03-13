@@ -39,13 +39,12 @@ namespace Hades.Edge.Grpc.Internal.Connectors
         public async Task Start()
         {
             //TODO Grpc must be constant here!!
-            _serviceDiscovery.GetDynamicServices("Grpc")
+            (await _serviceDiscovery.GetDynamicServices("Grpc"))
                 .GroupBy(t => t.CatalogName)
                 .Select(_serverServiceDefinitionBuilder.Build)
                 .Foreach(_server.Services.Add);
 
             _server.Start();
-            await Task.CompletedTask;
         }
 
         public async Task Stop()
