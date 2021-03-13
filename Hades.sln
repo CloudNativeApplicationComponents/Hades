@@ -48,7 +48,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Hades.Edge.Grpc", "src\Hade
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Hades.Edge.Spear.Integration", "src\Hades.Edge.Spear.Integration\Hades.Edge.Spear.Integration.csproj", "{D19E6CB6-865D-4FB4-90DE-A22826B6D3C6}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Hades.Core", "src\Hades.Core\Hades.Core.csproj", "{398BE667-B264-4529-82AF-18B0DB4D426F}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Hades.Core", "src\Hades.Core\Hades.Core.csproj", "{398BE667-B264-4529-82AF-18B0DB4D426F}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Spear.Client", "submodules\Spear\src\Spear.Client\Spear.Client.csproj", "{F70ABF0B-60D6-4FD6-8C2B-0B5A30485C06}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -100,6 +102,10 @@ Global
 		{398BE667-B264-4529-82AF-18B0DB4D426F}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{398BE667-B264-4529-82AF-18B0DB4D426F}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{398BE667-B264-4529-82AF-18B0DB4D426F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F70ABF0B-60D6-4FD6-8C2B-0B5A30485C06}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F70ABF0B-60D6-4FD6-8C2B-0B5A30485C06}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F70ABF0B-60D6-4FD6-8C2B-0B5A30485C06}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F70ABF0B-60D6-4FD6-8C2B-0B5A30485C06}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -122,6 +128,7 @@ Global
 		{EAD80C2D-917B-4D27-9F7C-370B356B1FBB} = {FA5AEEB2-45D6-48CE-BCA9-657222101279}
 		{D19E6CB6-865D-4FB4-90DE-A22826B6D3C6} = {FA5AEEB2-45D6-48CE-BCA9-657222101279}
 		{398BE667-B264-4529-82AF-18B0DB4D426F} = {F52E431C-670D-4895-B5BE-541646DA3CE2}
+		{F70ABF0B-60D6-4FD6-8C2B-0B5A30485C06} = {2F263092-1109-4E8C-B337-324CB7C8E959}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {9C1B0B43-5978-45D5-B395-598033E79E9C}

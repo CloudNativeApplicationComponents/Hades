@@ -9,7 +9,7 @@ namespace Hades.Edge.Grpc.Internal.Messages
 #endif
     {
         private static readonly MessageParser<ProtobufMessage> _parser = new MessageParser<ProtobufMessage>(() => new ProtobufMessage());
-        private UnknownFieldSet _unknownFields;
+        private UnknownFieldSet _unknownFields = default!;
 
         public static MessageParser<ProtobufMessage> Parser 
             => _parser;
@@ -38,7 +38,7 @@ namespace Hades.Edge.Grpc.Internal.Messages
             return Equals(other as ProtobufMessage);
         }
 
-        public bool Equals(ProtobufMessage other)
+        public bool Equals(ProtobufMessage? other)
         {
             if (other is null)
             {

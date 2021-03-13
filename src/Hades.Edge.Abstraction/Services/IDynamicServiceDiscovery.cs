@@ -1,10 +1,11 @@
 ﻿using System.Collections.Generic;
+using System.Threading.Tasks;
 
 namespace Hades.Edge.Abstraction.Services
 {
     public interface IDynamicServiceDiscovery
     {
-        IEnumerable<IDynamicService> GetDynamicServices();
-        IEnumerable<IDynamicService> GetDynamicServices(string dataPlane);
+        Task<IEnumerable<IDynamicService>> GetDynamicServices();
+        Task<IEnumerable<IDynamicService>> GetDynamicServices(string dataPlane);
     }
 }
