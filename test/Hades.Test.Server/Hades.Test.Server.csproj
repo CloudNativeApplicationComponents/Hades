@@ -5,9 +5,11 @@
 	</PropertyGroup>
 
 	<ItemGroup>
-		<ProjectReference Include="..\..\src\Hades.Core.Abstraction\Hades.Core.Abstraction.csproj" />
-		<ProjectReference Include="..\..\src\Hades.Core.Extensions\Hades.Core.Extensions.csproj" />
-		<ProjectReference Include="..\..\src\Hades.Core\Hades.Core.csproj" />
+	  <PackageReference Include="Microsoft.Extensions.Hosting" />
+	</ItemGroup>
+
+	<ItemGroup>
+		<ProjectReference Include="..\..\src\Hades.Edge.Abstraction\Hades.Edge.Abstraction.csproj" />
 		<ProjectReference Include="..\Hades.Test.Common\Hades.Test.Common.csproj" />
 	</ItemGroup>
 

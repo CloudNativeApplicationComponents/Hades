@@ -1,0 +1,72 @@
+<Project>
+
+  <PropertyGroup>
+    <MSVersion>5.0.0</MSVersion>
+  </PropertyGroup>
+
+
+  <ItemGroup>
+    <PackageReference Update="System.ComponentModel.Annotations" Version="$(MSVersion)"/>
+    <PackageReference Update="System.Text.Json" Version="$(MSVersion)" />
+    <PackageReference Update="System.Linq.Async" Version="$(MSVersion)" />
+    <PackageReference Update="System.Threading.Channels" Version="$(MSVersion)" />
+    <PackageReference Update="System.Threading.Tasks.Dataflow" Version="$(MSVersion)" />
+    <PackageReference Update="System.Reactive" Version="$(MSVersion)" />
+
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Update="Microsoft.Extensions.Logging" Version="$(MSVersion)"/>
+    <PackageReference Update="Microsoft.Extensions.Configuration" Version="$(MSVersion)"/>
+    <PackageReference Update="Microsoft.Extensions.Configuration.EnvironmentVariables" Version="$(MSVersion)"/>
+    <PackageReference Update="Microsoft.Extensions.Logging.Console" Version="$(MSVersion)"/>
+    <PackageReference Update="Microsoft.Extensions.Options" Version="$(MSVersion)"/>
+    <PackageReference Update="Microsoft.Extensions.DependencyInjection" Version="$(MSVersion)"/>
+    <PackageReference Update="Microsoft.Extensions.DependencyInjection.Abstractions" Version="$(MSVersion)"/>
+    <PackageReference Update="Microsoft.Extensions.Hosting" Version="$(MSVersion)"/>
+    <PackageReference Update="Microsoft.Extensions.Options.DataAnnotations" Version="$(MSVersion)"/>
+    <PackageReference Update="Microsoft.Extensions.Hosting.Abstractions" Version="$(MSVersion)"/>
+
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Update="System.Memory" Version="4.5.4"/>
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Update="Microsoft.NET.Test.Sdk" Version="16.8.0"/>
+    <PackageReference Update="xunit" Version="2.4.1"/>
+    <PackageReference Update="xunit.runner.visualstudio" Version="2.4.1"/>
+    <PackageReference Update="xunit.runner.reporters" Version="2.4.1"/>
+    <PackageReference Update="coverlet.msbuild" Version="2.9.0">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+    <PackageReference Update="coverlet.collector" Version="1.3.0">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Update="Google.Protobuf" Version="3.15.3"/>
+    <PackageReference Update="Grpc.Core" Version="2.36.1" />
+    <PackageReference Update="Grpc.Net.Client" Version="2.36.0" />
+    <PackageReference Update="Grpc.Tools" Version="2.36.1">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+    <PackageReference Update="Grpc.Core.Api" Version="2.36.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <AssemblyAttribute Include="System.Runtime.CompilerServices.InternalsVisibleTo">
+      <_Parameter1>$(MSBuildProjectName).UnitTests</_Parameter1>
+    </AssemblyAttribute>
+
+    <AssemblyAttribute Include="System.Runtime.CompilerServices.InternalsVisibleTo">
+      <_Parameter1>$(MSBuildProjectName).Extensions</_Parameter1>
+    </AssemblyAttribute>
+  </ItemGroup>
+
+</Project>

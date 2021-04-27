@@ -1,0 +1,13 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.1</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Hades.Transport.Abstraction\Hades.Transport.Abstraction.csproj" />
+    <ProjectReference Include="..\Hades.Transport.Grpc\Hades.Transport.Grpc.csproj" />
+    <ProjectReference Include="..\Hades.Transport\Hades.Transport.csproj" />
+  </ItemGroup>
+
+</Project>

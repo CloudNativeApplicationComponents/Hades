@@ -1,0 +1,15 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.1</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\submodules\Spear\submodules\Utils\src\CloudNativeApplicationComponents.Utils\CloudNativeApplicationComponents.Utils.csproj" />
+    <ProjectReference Include="..\Hades.Broker.Abstraction\Hades.Broker.Abstraction.csproj" />
+    <ProjectReference Include="..\Hades.Broker.Transport.Integration.Abstraction\Hades.Broker.Transport.Integration.Abstraction.csproj" />
+    <ProjectReference Include="..\Hades.Transport.Channels.Abstraction\Hades.Transport.Channels.Abstraction.csproj" />
+    <ProjectReference Include="..\Hades.Transport\Hades.Transport.csproj" />
+  </ItemGroup>
+
+</Project>
